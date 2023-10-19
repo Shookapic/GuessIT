@@ -18,6 +18,7 @@ void EvaluateChoice(int user_number, int bot_number)
 {
     if (user_number == bot_number) {
         cout << "GG ! The bot taked the L" << endl;
+        exit(0);
     } else {
         cout << "You lose :(" << endl;
         cout << "The bot choosed : " << bot_number << endl;
