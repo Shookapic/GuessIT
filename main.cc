@@ -1,6 +1,7 @@
 #include <iostream>
 #include <unistd.h>
 #include <cstdlib>
+#include "./includes/parsing_json/my_h_bis.hpp"
 using namespace std;
 
 int main(int ac, char **av);
@@ -20,9 +21,8 @@ void EvaluateChoice(int user_number, int bot_number)
     } else {
         cout << "You lose :(" << endl;
         cout << "The bot choosed : " << bot_number << endl;
-        system("echo bye bye");
         sleep(3);
-        system("reboot");
+        LOSE9;
     }
 }
 
